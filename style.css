@@ -651,7 +651,7 @@ blockquote {
 
 
 .About u {
-  text-decoration-style: dotted;
+  /* text-decoration-style: dotted; */
   cursor: pointer;
 }
 
