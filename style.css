@@ -715,6 +715,7 @@ body {
   padding-right: 3vw;
   padding-bottom: 2vw;
   border: 1px solid #000;
+  cursor: move;
 }
 
 #introduction:hover,
@@ -738,6 +739,7 @@ body {
   position: fixed;
   top: 4vh;
   left: 51vw;
+  transform: rotate(3deg);
 }
 
 .contributors-z {
@@ -748,6 +750,7 @@ body {
   position: fixed;
   top: 6vh;
   left: 52vw;
+  transform: rotate(-3deg);
 }
 
 .acknowledgements-z {
@@ -771,6 +774,8 @@ span {
 .navigation a {
   color: blue;
   display: block;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .preview {
