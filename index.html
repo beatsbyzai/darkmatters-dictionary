@@ -3,9 +3,15 @@
 
 
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dictionary of Dark Matters</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <script src="index.js"></script>
 
   </head>
 
@@ -15,10 +21,10 @@
   <body>
 
       <div class="navigation">
-        <a href="#introduction">introduction</a>
-        <a href="#contributors">contributors</a>
-        <a href="#acknowledgements">acknowledgements</a>
-        <a href="#introduction">book readings</a>
+        <a  href="" id="intro-link">introduction</a>
+        <a href=""  id="contrib-link">contributors</a>
+        <a href="" id="ack-link">acknowledgements</a>
+        <a href="youtube.com">public readings</a>
       </div>
 
       <div class="preview">
@@ -26,17 +32,19 @@
 
         565 pages <BR>
           5.5x8.5" <BR>
+            softcover <br>
         <a href="https://book.darkmatters.xyz">buy — $30</a>
       </div>
 
       <div class="left">
       </div>
 
-      <div class="right">
+      <!-- <div class="page"> -->
 
 
-        <div class="right-section" id="introduction">
+        <div class="page introduction-z" id="introduction">
           <p class="About">
+            <span class="neutraltitle">Introduction</span>
             <span class="author88210">This is the Dictionary of <u>Dark Matters</u>.</span>
             <!-- <sup class="wordinline">186</sup> -->
             <span class="author88210"> During the Summer of 2020, Dark Matters was taught by </span>
@@ -179,8 +187,8 @@
         </div>
 
 
-        <div class="right-section" id="contributors">
-
+        <div class="page contributors-z" id="contributors">
+          <span class="neutraltitle">Contributors</span>
           <div class="center">
               <div class="contributors authorstyle author134492">American Artist</div>
               <div class="contributors authorstyle author173746"><span class="contrib">angus fletcher</span></div>
@@ -217,11 +225,19 @@
               <div class="contributors authorstyle author88210">Zainab Aliyu<sup class="wordinline">*</sup></div>
           </div>
 
+          <p class="Asterisk">
+            <span class="neutral">* Asterisk indicates that the contributor also has illustrations sprinkled throughout book in the color of their name.</span>
+          </p>
+
+        </div>
+
+        <div class="page acknowledgements-z" id="acknowledgements">
+          <span class="neutraltitle">Acknowledgements</span>
         </div>
 
 
 
-      </div>
+      <!-- </div> -->
 
 
   </body>

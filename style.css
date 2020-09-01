@@ -515,7 +515,7 @@ p ol {
 
   color: #000 !important;
   font-style: none !important;
-  font-weight: bold;
+  /* font-weight: bold; */
   /* padding-top: 0.25in; */
   line-height: 1.25;
   margin: 0.5em 0;
@@ -527,6 +527,24 @@ p ol {
   -webkit-text-fill-color:  none !important;
  -webkit-text-stroke-width: 0px !important;
  -webkit-text-stroke-color: none !important;
+}
+
+.neutraltitle  {
+  font-family: "Special Elite", cursive;
+  font-size: 12pt;
+  color: #000 !important;
+  font-style: none !important;
+  line-height: 1.25;
+  margin: 0 0 1vw 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-text-fill-color:  none !important;
+ -webkit-text-stroke-width: 0px !important;
+ -webkit-text-stroke-color: none !important;
+ display: block;
 }
 
 .page-header  {
@@ -632,7 +650,7 @@ blockquote {
 sup.wordinline {
   font-family: "Special Elite", cursive;
   font-size: 12pt;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 
@@ -685,25 +703,55 @@ body {
 }
 
 
-.right {
+.page {
   width: 32vw;
+  height: 92vh;
   background: #fff;
-  position: fixed;
-  top: 3vh;
-  left: 50vw;
-  height: 94vh;
   display: block;
   overflow: scroll;
   box-sizing: border-box;
-
-}
-
-.right-section {
   padding-top: 2vw;
   padding-left: 3vw;
   padding-right: 3vw;
-  padding-bottom: 4vw;
-  border-bottom: 1px solid #ddd;
+  padding-bottom: 2vw;
+  border: 1px solid #000;
+}
+
+#introduction:hover,
+#contributors:hover,
+#acknowledgements:hover,
+.page:hover,
+.current-z {
+  z-index: 100000;
+}
+#introduction {
+  position: fixed;
+  top: 2vh;
+  left: 50vw;
+}
+
+.introduction-z {
+  z-index: 1000;
+}
+
+#contributors {
+  position: fixed;
+  top: 4vh;
+  left: 51vw;
+}
+
+.contributors-z {
+  z-index: 100;
+}
+
+#acknowledgements {
+  position: fixed;
+  top: 6vh;
+  left: 52vw;
+}
+
+.acknowledgements-z {
+  z-index: 10;
 }
 
 span {
@@ -713,7 +761,7 @@ span {
 }
 
 .navigation {
-  position: absolute;
+  position: fixed;
   right: 2vw;
   top: 2vw;
   text-align: right;
@@ -726,7 +774,7 @@ span {
 }
 
 .preview {
-  position: absolute;
+  position: fixed;
   right: 2vw;
   bottom: 2vw;
   color: #fff;
