@@ -731,14 +731,63 @@ body {
 }
 
 .cover {
-  width: 32vw;
+  width: 31vw;
   height: 92vh;
   background: #000;
   display: block;
   overflow: hidden;
   box-sizing: border-box;
-  border: 1px solid #ddd;
+  position: fixed;
+  left: 60vw;
+  top: 2vw;
+  background-image: url("images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #555;
 }
+
+/* 1688 x
+    2625 92 */
+
+    /* 400  x
+       2625 92 */
+
+.spine {
+  /* width: 7.58vw; */
+  width: 7.45vw;
+  height: 92vh;
+  background: #000;
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: fixed;
+  right: 40vw;
+  top: 2vw;
+  background-image: url("images/spine.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #555;
+}
+
+.back {
+  width: 31vw;
+  height: 92vh;
+  background: #000;
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: fixed;
+  right: 47.45vw;
+  top: 2vw;
+  background-image: url("images/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #555;
+  /* opacity: .5; */
+}
+
+
+
 
 
 
@@ -782,7 +831,7 @@ body {
 
 .stack {
   top: 2vh !important;
-  left: 50vw !important;
+  right: 50vw !important;
   /* z-index: -1 !important; */
 }
 
@@ -790,6 +839,7 @@ body {
   position: fixed;
   top: 2vh;
   right: 50vw;
+  transform: rotate(-1deg);
 }
 
 .introduction-z {
@@ -800,7 +850,7 @@ body {
   position: fixed;
   top: 5vh;
   right: 50vw;
-  transform: rotate(3deg);
+  transform: rotate(4deg);
 }
 
 .contributors-z {
@@ -811,7 +861,7 @@ body {
   position: fixed;
   top: 6vh;
   right: 52vw;
-  transform: rotate(-3deg);
+  transform: rotate(-4deg);
 }
 
 .acknowledgements-z {
@@ -876,7 +926,7 @@ span {
   line-height: 1.3;
 }
 
-.hide {
+.hide, .hidepages {
   /* display: none; */
   visibility: hidden;
   opacity: 0;
@@ -893,6 +943,10 @@ span {
   z-index: 100000000;
 }
 
+.negative {
+  margin-left: -.3vw;
+}
+
 .active-link {
   color: #000;
   text-decoration: none;
@@ -902,20 +956,20 @@ span {
 #dark-matter {
   position: fixed;
   top: 25vh;
-  left: 56vw;
+  right: 6vw;
   transform: rotate(6deg);
 }
 
 #poetic-computation {
   position: fixed;
   top: 5vh;
-  left: 54vw;
+  right: 4vw;
   transform: rotate(3deg);
 }
 
 #zoom {
   position: fixed;
   top: 15vh;
-  left: 60vw;
-  transform: rotate(-6deg);
+  right: 10vw;
+  transform: rotate(-5deg);
 }
