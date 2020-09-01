@@ -6,120 +6,140 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kavivanar&display=swap");
 
- @font-face {
-  font-family: 'Reckless';
-  src: url(fonts/RecklessNeue-Medium.otf);
-  font-style: normal;
+
+
+@font-face {
+    font-family: 'Wilson';
+    src: url('fonts/Wilson.otf');
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avara';
-  src: url(fonts/avara.woff);
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Terminal';
-  src: url(fonts/terminal-grotesque-webfont.woff);
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hershey Times';
-  src: url(fonts/Hershey-Noailles-Times-Duplex-Italic-Regular.woff);
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Hershey Futura';
-  src: url(fonts/Hershey-Noailles-Futura-Duplex-Regular.woff);
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bodoni';
-  src: url(fonts/BodoniBook.otf);
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OCR';
-  src: url(fonts/OCR-A-Regular.otf);
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Redaction';
-  src: url(fonts/Redaction_70-Regular.woff2);
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Alte Haas';
-  src: url(fonts/AlteHaasGroteskRegular.ttf);
-  font-style: normal;
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Book.otf');
+    font-style: normal;
 }
 
 
 @font-face {
-  font-family: 'Berthold';
-  src: url(fonts/Berthold-Akzidenz-Grotesk-BE-Bold.otf);
-  font-style: normal;
+    font-family: 'Reckless';
+    src: url('fonts/RecklessNeue-Medium.otf');
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Berthold Medium';
-  src: url(fonts/Berthold-Akzidenz-Grotesk-BE-Medium.otf);
-  font-style: normal;
+    font-family: 'Avara';
+    src: url('fonts/avara.woff');
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Windsor Cond Bold';
-  src: url(fonts/WindsorBQ-Elongated.otf);
-  font-style: normal;
+    font-family: 'Terminal';
+    src: url('fonts/terminal-grotesque-webfont.woff');
+    font-style: normal;
 }
 
-@font-face {
-  font-family: 'Windsor Cond Light';
-  src: url(fonts/WindsorEF-LightCondensed.otf);
-  font-style: normal;
-}
+
+
 
 @font-face {
-  font-family: 'Fira Code';
-  src: url(fonts/FiraCode-Regular.ttf);
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gill Sans Italic';
-  src: url(fonts/GillSansStd-Italic.otf);
-  font-style: normal;
+    font-family: 'Hershey Times';
+    src: url('fonts/Hershey-Noailles-Times-Duplex-Italic-Regular.woff');
+    font-style: normal;
 }
 
 
 @font-face {
-  font-family: 'Franklin Gothic';
-  src: url(fonts/franklinGothic.otf);
-  font-style: normal;
+    font-family: 'Hershey Futura';
+    src: url('fonts/Hershey-Noailles-Futura-Duplex-Regular.woff');
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Olive';
-  src: url(fonts/Olive_DEMO.otf);
-  font-style: normal;
+    font-family: 'Bodoni';
+    src: url('fonts/BodoniBook.otf');
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Parabole Trial';
-  src: url(fonts/ParaboleTrial-Regular.otf);
-  font-style: normal;
+    font-family: 'OCR';
+    src: url('fonts/OCR-A-Regular.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Redaction';
+    src: url('fonts/Redaction_70-Regular.woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alte Haas';
+    src: url('fonts/AlteHaasGroteskRegular.ttf');
+    font-style: normal;
 }
 
 
 @font-face {
-  font-family: 'Daniel';
-  src: url(fonts/danielbd.ttf);
-  font-style: normal;
+    font-family: 'Berthold';
+    src: url('fonts/Berthold-Akzidenz-Grotesk-BE-Bold.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Berthold Medium';
+    src: url('fonts/Berthold-Akzidenz-Grotesk-BE-Medium.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Windsor Cond Bold';
+    src: url('fonts/WindsorBQ-Elongated.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Windsor Cond Light';
+    src: url('fonts/WindsorEF-LightCondensed.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('fonts/FiraCode-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Italic';
+    src: url('fonts/GillSansStd-Italic.otf');
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('fonts/franklinGothic.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Olive';
+    src: url('fonts/Olive_DEMO.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Parabole Trial';
+    src: url('fonts/ParaboleTrial-Regular.otf');
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Daniel';
+    src: url('fonts/danielbd.ttf');
+    font-style: normal;
 }
 
 
@@ -129,16 +149,16 @@
 
 /* american */
 .author134492.authorstyle, .author134492 {
-font-family: 'Parabole Trial';
-color: #7500DB;
+  font-family: 'Parabole Trial';
+  color: #7500DB;
 }
 
 /* zai */
 .author88210.authorstyle, .author88210 {
-font-family: 'Kavivanar', cursive;
-/* font-family: 'Hershey', cursive;
-letter-spacing: -1px; */
-color: #ff7a3f;
+  font-family: 'Kavivanar', cursive;
+  /* font-family: 'Hershey', cursive;
+  letter-spacing: -1px; */
+  color: #ff7a3f;
 }
 
 
@@ -146,51 +166,67 @@ color: #ff7a3f;
 
 /* tristian */
 .author173504.authorstyle {
-font-family: bebas-neue-pro, sans-serif;
-font-weight: 400;
-font-style: normal;
-color: #ffc20d;
+  font-family: bebas-neue-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffc20d;
 }
 
 /* krystal */
 .author173503.authorstyle {
-font-family: "Courier";
-color: teal;
+  font-family: "Courier";
+  color: teal;
 }
 
 /* teresa */
 .author173506.authorstyle {
-font-family: Arial;
-color: #5113bd;
+  font-family: Arial;
+  color: #5113bd;
 }
 
 /* angus */
 .author173746.authorstyle {
-font-family: "Special Elite", cursive;
-font-style: normal;
-color: #000;
+  font-family: "Special Elite", cursive;
+  font-style: normal;
+  color: #000;
 }
 .author173746.authorstyle p p,
 span.author173746.authorstyle ,
 .author173746.authorstyle li,
 .author173746.authorstyle span.contrib
 {
-background-color: #c9f2f2;
+  background-color: #c9f2f2;
 }
+
+
+/* david */
+.author37613.authorstyle {
+  font-family: 'Wilson';
+  font-style: normal;
+  color: #000;
+}
+.author37613.authorstyle p p,
+span.author37613.authorstyle ,
+.author37613.authorstyle li,
+.author37613.authorstyle span.contrib
+{
+  background-color: #E6E6FA;
+}
+
 
 
 /* lauren g */
 .author17810.authorstyle {
-font-family: "Special Elite", cursive;
-font-style: normal;
-color: #000;
+  font-family: "Special Elite", cursive;
+  font-style: normal;
+  color: #000;
 }
 .author17810.authorstyle p p,
 span.author17810.authorstyle ,
 .author17810.authorstyle li,
 .author17810.authorstyle span.contrib
 {
-background-color: #f2ffad;
+  background-color: #f2ffad;
 }
 
 
@@ -198,144 +234,153 @@ background-color: #f2ffad;
 
 /* tash */
 .author159845.authorstyle {
-font-family: "Ubuntu", sans-serif;
-color: #df73ff;
-font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+  color: #df73ff;
+  font-weight: 300;
 }
+
+
+/* diana */
+.author173736.authorstyle {
+  font-family: "Ubuntu", sans-serif;
+  color: #7851A9;
+  font-weight: 300;
+}
+
 
 /* jessica */
 .author173499.authorstyle {
-font-family: Helvetica;
-color: #289d2c;
+  font-family: Helvetica;
+  color: #289d2c;
 }
 
 /* paras */
 .author173502.authorstyle {
-font-family: Courier;
-color: #6b8e23;
+  font-family: Courier;
+  color: #6b8e23;
 }
 
 
 /* ryan */
 .author23411.authorstyle {
-font-family: 'Lato', sans-serif;
-color: #20B2AA;
-font-style: normal;
-font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #20B2AA;
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* kevin */
 .author173500.authorstyle {
-font-family: 'Reckless';
-color: #DD1327;
-line-height: 1.3;
+  font-family: 'Reckless';
+  color: #DD1327;
+  line-height: 1.3;
 }
 
 /* trevor */
 .author173534.authorstyle {
-font-family: Arial;
-color: purple;
+  font-family: Arial;
+  color: purple;
 }
 
 /* timur */
 .author7454.authorstyle {
-font-family: Times;
-color: #ff0000;
+  font-family: Times;
+  color: #ff0000;
 } .author7454.authorstyle p {
-font-style: italic;
-letter-spacing: -.03em;
+  font-style: italic;
+  letter-spacing: -.03em;
 }
 
 /* sara */
 .author173494.authorstyle {
-font-family: 'IBM Plex Sans', sans-serif;
-font-weight: 500;
-color: #0000ee;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  color: #0000ee;
 }
 
 /* connor */
 .author13842.authorstyle {
-font-family: 'IBM Plex Sans', sans-serif;
-color: #B9E7B6;
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: #8CBB89;
-font-weight: 700;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #B9E7B6;
+ -webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: #8CBB89;
+  font-weight: 700;
 } .author13842.authorstyle p p,
 .author13842.authorstyle li {
-/* background-color: #B9E7B6; */
+  /* background-color: #B9E7B6; */
 }
 
 
 /* lissa */
 .author173501.authorstyle {
-font-family: 'Bodoni';
-color: #800020;
+  font-family: 'Bodoni';
+  color: #800020;
 }
 
 /* miranda */
 .author173613.authorstyle {
-font-family: 'OCR';
-color: #FF7A66;
+  font-family: 'OCR';
+  color: #FF7A66;
 }
 
 /* cameron */
 .author173508.authorstyle {
-font-family: 'Alte Haas';
-color: yellow;
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: #000;
+  font-family: 'Alte Haas';
+  color: yellow;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
 }
 
 /* lauren m. */
 .author173730.authorstyle {
-font-family: 'Arial';
-color: #FF00FF;
+  font-family: 'Arial';
+  color: #FF00FF;
 }
 
 /* Heather */
 .author173830.authorstyle {
-font-family: 'Redaction';
-color: #ff008a;
+  font-family: 'Redaction';
+  color: #ff008a;
 }
 
 
 /* rahel */
 .author162734.authorstyle {
-font-family: Georgia;
-color: #000066;
+  font-family: Georgia;
+  color: #000066;
 }
 
 
 /* sus */
 .author173737.authorstyle {
-font-family: 'Gill Sans Italic';
-color: #0511CF;
+  font-family: 'Gill Sans Italic';
+  color: #0511CF;
 }
 
 /* tyler */
 .author25047.authorstyle {
-font-family: 'Fira Code';
-color: #FF0000;
+  font-family: 'Fira Code';
+  color: #FF0000;
 }
 
 /* makshya */
 .author173495.authorstyle {
-font-family: Helvetica;
-color: #F5C4C0;
-/* font-weight: bold; */
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: #e09d98;
+  font-family: Helvetica;
+  color: #F5C4C0;
+  /* font-weight: bold; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #e09d98;
 }
 
 
 /* .author173495.authorstyle {
-font-style: normal;
-font-family: Helvetica;
-color: #000;
+  font-style: normal;
+  font-family: Helvetica;
+  color: #000;
 }
 .author173495.authorstyle p p,
 .author173495.authorstyle li {
-background-color: #F5C4C0;
+  background-color: #F5C4C0;
 } */
 
 
@@ -344,24 +389,32 @@ background-color: #F5C4C0;
 
 /* matt ross */
 .author126808.authorstyle {
-font-family: 'Roboto Mono', monospace;
-color: #556b2f;
+  font-family: 'Roboto Mono', monospace;
+  color: #556b2f;
 } .author126808.authorstyle p {
-font-style: italic;
+  font-style: italic;
 }
 
 /* ilona */
 .author72134.authorstyle {
-font-family: 'Kavivanar', cursive;
-color: #CC7722;
+  font-family: 'Kavivanar', cursive;
+  color: #CC7722;
 }
 
 
 
 /* lluvia */
 .author160124.authorstyle {
-font-family: 'Daniel';
-color: #E4007C;
+  font-family: 'Daniel';
+  color: #E4007C;
+}
+
+
+/* leanne */
+.author173505.authorstyle {
+  /* font-family: 'Hershey Futura'; */
+  font-family: 'Gotham';
+  color: #159ED9;
 }
 
 
@@ -371,40 +424,18 @@ color: #E4007C;
 
 /* makayla */
 .author102862.authorstyle {
-font-family: 'Avara';
-color: orange;
-}
-
-/* david */
-.author37613.authorstyle {
-font-family: 'Terminal';
-color: #18c1ff;
+  font-family: 'Avara';
+  color: orange;
 }
 
 /* bronte */
 .author173511.authorstyle {
-font-family: 'Hershey Times', cursive;
-color: #b08213;
+  font-family: 'Hershey Times', cursive;
+  color: #b08213;
 } .author173511.authorstyle p {
-letter-spacing: -1px;
+  letter-spacing: -1px;
 }
 
-/* leanne */
-.author173505.authorstyle {
-font-family: 'Hershey Futura';
-color: #20d2ed;
-}
-
-
-
-/* diana */
-.author173736.authorstyle {
-font-family: Arial;
-color: #20ed9d;
-}
-
-
-/* —————————————— */
 
 a {
   color: inherit;
@@ -590,6 +621,12 @@ blockquote {
 
 .About u {
   text-decoration-style: dotted;
+  cursor: pointer;
+}
+
+
+.About u:hover {
+  color: #000;
 }
 
 sup.wordinline {
@@ -649,7 +686,7 @@ body {
 
 
 .right {
-  width: 30vw;
+  width: 32vw;
   background: #fff;
   position: fixed;
   top: 3vh;
@@ -658,14 +695,52 @@ body {
   display: block;
   overflow: scroll;
   box-sizing: border-box;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+
+}
+
+.right-section {
+  padding-top: 2vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-bottom: 4vw;
+  border-bottom: 1px solid #ddd;
 }
 
 span {
   margin: 0;
   padding: 0;
   display: inline;
+}
+
+.navigation {
+  position: absolute;
+  right: 2vw;
+  top: 2vw;
+  text-align: right;
+  line-height: 1.5;
+}
+
+.navigation a {
+  color: blue;
+  display: block;
+}
+
+.preview {
+  position: absolute;
+  right: 2vw;
+  bottom: 2vw;
+  color: #fff;
+  text-align: right;
+  line-height: 1.5;
+}
+
+.preview a {
+  color: blue;
+  display: block;
+}
+
+.preview a.big {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 2vw;
 }
