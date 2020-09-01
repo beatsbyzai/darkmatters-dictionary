@@ -7,6 +7,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Kavivanar&display=swap");
 
 
+* {
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
 
 @font-face {
     font-family: 'Wilson';
@@ -461,11 +468,11 @@ img {
   margin-bottom: 0.25in !important;
 }
 p.description{
-  font-size: 14pt;
+  /* font-size: 14pt; */
   padding-left: .2in;
   padding-top: .05in;
   padding-bottom: .05in !important;
-  line-height: 1.3;
+  /* line-height: 1.3; */
   margin-block-start: 0in !important;
   margin-block-end: 0.25in !important;
   display: block;
@@ -547,6 +554,7 @@ p ol {
  display: block;
 }
 
+
 .page-header  {
   /* font-family: 'Berthold Medium'; */
   /* font-size: 14pt !important; */
@@ -621,6 +629,7 @@ blockquote {
   /* font-size: 15.5pt; */
   font-size: 1.22vw;
   line-height: 1.4;
+  margin-top: 0px;
   /* line-height: 1.1; */
 }
 
@@ -645,6 +654,7 @@ blockquote {
 
 .About u:hover {
   color: #000;
+  text-decoration: none;
 }
 
 sup.wordinline {
@@ -711,11 +721,39 @@ body {
   overflow: scroll;
   box-sizing: border-box;
   padding-top: 2vw;
-  padding-left: 3vw;
-  padding-right: 3vw;
   padding-bottom: 2vw;
   border: 1px solid #000;
   cursor: move;
+}
+
+.leftpage {
+  padding-left: 4vw;
+  padding-right: 2vw;
+}
+
+.num {
+  font-family: "Special Elite", cursive;
+  font-size: 10pt;
+  color: #000 !important;
+  font-style: none !important;
+}
+
+.leftpage .num {
+  position: absolute;
+  bottom: 2vh;
+  right: 2vw;
+}
+
+
+.rightpage {
+  padding-left: 2vw;
+  padding-right: 4vw;
+}
+
+.rightpage .num {
+  position: absolute;
+  bottom: 2vh;
+  left: 2vw;
 }
 
 #introduction:hover,
@@ -737,8 +775,8 @@ body {
 
 #contributors {
   position: fixed;
-  top: 4vh;
-  left: 51vw;
+  top: 5vh;
+  left: 50vw;
   transform: rotate(3deg);
 }
 
@@ -796,4 +834,62 @@ span {
   font-size: 24px;
   display: block;
   margin-bottom: 2vw;
+}
+
+.big {
+  font-size: 1.6vw;
+  line-height: 1.3;
+}
+
+.small {
+  font-size: 1.22vw;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 1.1vw;
+  line-height: 1.3;
+}
+
+.hide {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+}
+
+.show {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 100;
+}
+
+.z {
+  z-index: 100000000;
+}
+
+.active-link {
+  color: #000;
+  text-decoration: none;
+}
+
+#dark-matter {
+  position: fixed;
+  top: 25vh;
+  left: 6vw;
+  transform: rotate(6deg);
+}
+
+#poetic-computation {
+  position: fixed;
+  top: 5vh;
+  left: 4vw;
+  transform: rotate(3deg);
+}
+
+#zoom {
+  position: fixed;
+  top: 15vh;
+  left: 40vw;
+  transform: rotate(-6deg);
 }

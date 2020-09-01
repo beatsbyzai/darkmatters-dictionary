@@ -19,6 +19,24 @@ $( document ).ready(function() {
     $("#introduction").addClass("introduction-z").removeClass("current-z");
   });
 
+  $("#link-poetic-computation").click(function(){
+    $("#poetic-computation").toggleClass("hide");
+    $("#link-poetic-computation").toggleClass("active-link");
+    // $("#poetic-computation").addClass("z");
+  });
+
+  $("#link-zoom").click(function(){
+    $("#zoom").toggleClass("hide");
+    $("#link-zoom").toggleClass("active-link");
+    // $("#zoom").addClass("z");
+  });
+
+  $("#link-dark-matter").click(function(){
+    $("#dark-matter").toggleClass("hide");
+    $("#link-dark-matter").toggleClass("active-link");
+    // $("#dark-matter").addClass("z");
+  });
+
   $(function() {
       $( ".page" ).draggable();
     });
