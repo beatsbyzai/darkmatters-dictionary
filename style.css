@@ -952,6 +952,10 @@ span {
   text-decoration: none;
 }
 
+.active-link:hover {
+  color: #000;
+  text-decoration: underline !important;
+}
 
 #dark-matter {
   position: fixed;
