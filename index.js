@@ -1,5 +1,19 @@
 $( document ).ready(function() {
 
+  var pages = ["poetic-computation", "zoom", "dark-matter"];
+
+  $("#link-stack").click(function(){
+    $(".page").addClass("stack");
+    $(".link-unstack").removeClass("hide");
+    $(".link-stack").addClass("hide");
+  });
+
+  $("#link-unstack").click(function(){
+    $(".page").removeClass("stack");
+    $(".link-unstack").addClass("hide");
+    $(".link-stack").removeClass("hide");
+  });
+
   $("#intro-link").click(function(){
     $("#introduction").removeClass("introduction-z").addClass("current-z");
     $("#contributors").addClass("contributors-z").removeClass("current-z");
@@ -22,19 +36,19 @@ $( document ).ready(function() {
   $("#link-poetic-computation").click(function(){
     $("#poetic-computation").toggleClass("hide");
     $("#link-poetic-computation").toggleClass("active-link");
-    // $("#poetic-computation").addClass("z");
+    $("#poetic-computation").removeClass("stack");
   });
 
   $("#link-zoom").click(function(){
     $("#zoom").toggleClass("hide");
     $("#link-zoom").toggleClass("active-link");
-    // $("#zoom").addClass("z");
+    $("#zoom").removeClass("stack");
   });
 
   $("#link-dark-matter").click(function(){
     $("#dark-matter").toggleClass("hide");
     $("#link-dark-matter").toggleClass("active-link");
-    // $("#dark-matter").addClass("z");
+    $("#dark-matter").removeClass("stack");
   });
 
   $(function() {
