@@ -3,16 +3,16 @@ $( document ).ready(function() {
   var pages = ["poetic-computation", "zoom", "dark-matter"];
 
   $("#link-stack").click(function(){
-    $(".page").addClass("stack");
-    $(".link-unstack").removeClass("hide");
-    $(".link-stack").addClass("hide");
+    $(".page").toggleClass("stack");
+    // $(".link-unstack").removeClass("hide");
+    // $(".link-stack").addClass("hide");
   });
 
-  $("#link-unstack").click(function(){
-    $(".page").removeClass("stack");
-    $(".link-unstack").addClass("hide");
-    $(".link-stack").removeClass("hide");
-  });
+  // $("#link-unstack").click(function(){
+  //   $(".page").removeClass("stack");
+  //   $(".link-unstack").addClass("hide");
+  //   $(".link-stack").removeClass("hide");
+  // });
 
   $("#link-hide").click(function(){
     $(".page").toggleClass("hidepages");
