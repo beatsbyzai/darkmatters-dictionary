@@ -5,8 +5,10 @@
 <!-- website designed and developed by zainab aliyu -->
 
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta charset="utf-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Dictionary of Dark Matters</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -28,14 +30,17 @@
         <a id="ack-link">Acknowledgements</a>
         <a id="cite-link">How to Cite</a>
         <a id="read-link">Public Readings</a>
+        <a id="buy-link" class="hide-desktop hide">Buy — $30</a>
       </div>
 
       <div class="preview">
-        <a id="link-hide" class="hide">show/hide pages</a>
-        <a id="link-stack" class="hide">un/stack pages</a>
+        <a id="link-hide" class="hide hide-mobile">show/hide pages</a>
+        <a id="link-stack" class="hide hide-mobile">un/stack pages</a>
         <!-- <a id="link-unstack hide">unstack pages</a> -->
-        <a href="https://book.darkmatters.xyz" class="big prev">preview <BR>full book</a>
+        <a href="https://book.darkmatters.xyz" class="big">preview <BR>full book</a>
+      </div>
 
+      <div class="buy">
         565 pages <BR>
           5.5x8.5" <BR>
             Softcover <br>
@@ -49,10 +54,13 @@
       <!-- <div class="page"> -->
 
       <div class="cover">
+        <img src="images/cover.jpg" class="hide-desktop">
       </div>
       <div class="spine">
+        <img src="images/spine.jpg" class="hide-desktop">
       </div>
       <div class="back">
+        <img src="images/back.jpg" class="hide-desktop">
       </div>
 
         <div class="page leftpage introduction-z hide" id="introduction">
@@ -86,7 +94,7 @@
             <span class="author88210">This critical text winds </span>
             <span class="author134492">personal, political and pop-cultural narratives of <u id="link-racial-gaze">racial gaze</u></span>
             <sup class="wordinline">442 </sup>
-            <span class="author134492"> and <u>sousveillance</u></span>
+            <span class="author134492"> and <u id="link-sousveillance">sousveillance</u></span>
             <sup class="wordinline">476 </sup>
             <span class="author134492"> to address the origins of so many recurring dynamics of power that operate through high technology. The readings in our class began with Wendy Chun's critique of </span>
             <span class="author88210"><u id="link-software">software</u></span>
@@ -101,7 +109,7 @@
           <!-- </p>
 
           <p class="About"> -->
-            <span class="author134492">American Artist's <u>Black Gooey Universe</u></span>
+            <span class="author134492">American Artist's <u id="link-black-gooey-universe">Black Gooey Universe</u></span>
             <sup class="wordinline">100 </sup>
             <span class="author88210">and imagining of an unsovereign technology. </span>
             <span class="author134492">Over the four </span>
@@ -110,7 +118,7 @@
             <span class="author88210">Selected work by these authors hold </span>
             <span class="author134492">the origins of the <u id="link-interface">interface</u></span>
             <sup class="wordinline">100 </sup>
-            <span class="author134492">to account for the continuation of <u>racial capitalism</u>,</span>
+            <span class="author134492">to account for the continuation of <u id="link-racial-capitalism">racial capitalism</u>,</span>
             <sup class="wordinline">100 </sup>
             <span class="author134492">the <u id="link-debt-state">debt state</u>,</span>
             <sup class="wordinline">100 </sup>
@@ -151,7 +159,7 @@
             <span class="author88210">of </span>
             <span class="author134492">various </span>
             <span class="author88210">academic institutions and places of work </span>
-            <span class="author134492">(including our own) for their perpetuation of <u>anti-blackness</u>.</span>
+            <span class="author134492">(including our own) for their perpetuation of <u id="link-anti-blackness">anti-blackness</u>.</span>
             <sup class="wordinline">100 </sup>
             <span class="author134492">These issues framed all of our </span>
             <span class="author88210">conversations and largely </span>
@@ -175,18 +183,18 @@
             <span class="author134492">The </span>
             <span class="author88210">self-published </span>
             <span class="author134492">book you are reading is the culmination of all of that thought. It is a 500+ page (and growing) collaborative </span>
-            <span class="author88210"><u>people's dictionary</u></span>
+            <span class="author88210"><u id="link-peoples-dictionary">people's dictionary</u></span>
             <sup class="wordinline">100 </sup>
             <span class="author88210">written over the course of ten weeks. </span>
-            <span class="author134492">It is an <u>abundance</u></span>
+            <span class="author134492">It is an <u id="link-abundance">abundance</u></span>
             <sup class="wordinline">100 </sup>
             <span class="author134492">of poetry, prose, creative writing, personal history and illustration </span>
             <span class="author88210">filled with terms we have come across during our time together. </span>
-            <span class="author134492">For <u>transparency</u>,</span>
+            <span class="author134492">For <u id="link-transparency">transparency</u>,</span>
             <sup class="wordinline">100 </sup>
             <span class="author88210">every voice within the dictionary is uniquely represented with the contributor's preference in typography. By </span>
             <span class="author88210">archiving our histories and inserting our </span>
-            <span class="author134492"><u>human</u></span>
+            <span class="author134492"><u id="link-human">human</u></span>
             <sup class="wordinline">100 </sup>
             <span class="author88210">experiences into the critical theories we are </span>
           <!-- </p>
@@ -280,7 +288,7 @@
 
 
 
-        <div class="page rightpage hide" id="dark-matter">
+        <div class="page rightpage hide hide-mobile" id="dark-matter">
           <span class="neutraltitle">Dark Matter</span>
 
 
@@ -295,11 +303,11 @@
             <span class="neutral">— contributed by American Artist</span>
           </p>
 
-          <div class="num">10</div>
+          <div class="num">191</div>
         </div>
 
 
-        <div class="page rightpage hide" id="poetic-computation">
+        <div class="page rightpage hide hide-mobile" id="poetic-computation">
           <span class="neutraltitle">Poetic Computation</span>
           <p class="authorstyle author88210 big">
             An act of resistance against the utilitarian notions of “efficiency” and "progress" that often replicate structures of domination and capitalist agendas.
@@ -307,10 +315,10 @@
           <p class="Ack">
             <span class="neutral">— contributed by Zainab Aliyu</span>
           </p>
-          <div class="num">10</div>
+          <div class="num">434</div>
         </div>
 
-        <div class="page leftpage hide" id="zoom">
+        <div class="page leftpage hide hide-mobile" id="zoom">
           <span class="neutraltitle">Zoom</span>
           <p class="authorstyle author134492 small">
             Zoom is a video-conferencing platform that became extremely popular in the United States during the COVID-19 pandemic. Within weeks many professional institutions and universities mandated the use of Zoom by employees rather than other more familiar video-conferencing platforms. Though applications such as Skype and FaceTime have built their names to be synonymous with the act of video-calling, Zoom immediately overcame their familiarity through mere ubiquity. Zoom’s popularity has raised privacy concerns for many critics of networked technology, and though the FBI issued a warning about Zoom’s teleconferences being hijacked to display violent imagery and hate speech, it is still considered a popular platform for mass video-conferencing in the United States as of August 2020.
@@ -318,8 +326,367 @@
           <p class="Ack">
             <span class="neutral">— contributed by American Artist</span>
           </p>
-          <div class="num">10</div>
+          <div class="num">563</div>
         </div>
+
+        <div class="page leftpage hide hide-mobile" id="study">
+          <span class="neutraltitle">Study</span>
+          <p class="authorstyle author134492 small">
+            “When you think about what study is, the way that we understand it as a practice, we’re talking about getting together with others, and determining what needs to be learned together, and spending time with that material, spending time with each other, without any objective, without any end point, without any sense that we will ever escape our feeling that we are permanently immature, premature, without credit, and in a kind of mutual bad debt to each other, which we don’t intend to repay.”
+          </p>
+          <p class="authorstyle author134492 description">
+            Stephano Harney on "Study"<BR><BR>https://www.youtube.com/watch?v=uJzMi68Cfw0
+          </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by American Artist</span>
+          </p>
+          <div class="num">495</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="surveillance">
+          <span class="neutraltitle">Surveillance</span>
+          <img src="images/surveillance.png">
+          <p class="Ack">
+            <span class="neutral">— contributed by Lluvia Nisaye</span>
+          </p>
+          <div class="num">496</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="racial-gaze">
+          <span class="neutraltitle">Racial Gaze</span>
+          <p class="authorstyle author72134 big">
+            the scrutinizing of blackness,<Br>
+            looking so hard that,<Br>
+            that-the-one-that's-looking’s eyes<Br>
+            blurrrr<Br>
+            into hallucination,<Br>
+            projection
+            </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by ilona altman</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="sousveillance">
+          <span class="neutraltitle">Sousveillance</span>
+          <img src="images/sousveillance.png">
+          <p class="authorstyle author173737 description">
+
+          sousveillance - instagram - surveillance - cops - profit
+          <BR><BR>
+          Sousveillance - we observe each other using our senses and what we gather remains in a closed loop. We interact person to person on social media, watching and wondering about each other through likes and clicks. In ways that are both obvious and obfuscated from us, police and advertisers monitor our behaviors and connections using data that could follow us forever. By storing our memories online, we are trackable and traceable in an ever expanding spiral outwards, with all roads leading to profit.
+          </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Sus Labowitz</span>
+          </p>
+          <div class="num">473</div>
+        </div>
+
+
+        <div class="page leftpage hide hide-mobile" id="software">
+          <span class="neutraltitle">Software</span>
+          <p class="authorstyle author173508 big">
+          Noun
+          <br><BR>
+            An anthropomorphic and intangible category of data prescribed by humans.
+          <p class="Ack">
+            <span class="neutral">— contributed by Cameron Granger</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+
+
+        <div class="page leftpage hide hide-mobile" id="ideology">
+          <span class="neutraltitle">Ideology</span>
+          <p class="authorstyle author173503 big">
+            A projection of ideas that may or may not be agreed upon but rather accepted by a dominant group / oligarchy (to be consumed)
+            </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Krystal Maughan</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="obfuscation">
+          <span class="neutraltitle">Obfuscation</span>
+          <p class="authorstyle author173511 big">
+            at least one dream a week where someone is coming for me but can’t find me,<BR>
+            i’ve unmastered myself enough so as not to be found<BR><BR>
+
+            black, fugitive dreams<BR>
+            encoded laughter<BR>
+            encrypted joy<BR>
+            inaccessible longings<BR>
+            protected prayers</p>
+          <p class="Ack">
+            <span class="neutral">— contributed by brontë velez</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+
+        <div class="page leftpage hide hide-mobile" id="black-gooey-universe">
+          <span class="neutraltitle">Black Gooey Universe</span>
+          <img src="images/blackgooey.jpg">
+          <p class="authorstyle author173494 description">
+            In collaboration with Angus Fletcher, Krystal Maughan, Rahel Aima and Sara K.R.
+          </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Sara K.R.</span>
+          </p>
+          <div class="num">496</div>
+        </div>
+
+
+        <div class="page leftpage hide hide-mobile" id="interface">
+          <div class="block" style="background-image: url('images/tyler-interface-surveil.png');"></div>
+          <span class="neutraltitle">Interface</span>
+          <p class="authorstyle author173504 big">
+            The point of interaction and bases of interaction between a user, a surveilled being or a victim and a tool.</p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Tristan Sauer</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="racial-capitalism">
+          <span class="neutraltitle">Racial Capitalism</span>
+          <p class="authorstyle author102862 big">
+            a system of apportioning exploitability, humanity, and extractability along racial lines in order to subsidize whiteness as quality of life, as access to rights
+          </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Makayla Bailey</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="debt-state">
+          <div class="block" style="background-image: url('images/sus-debt.png');"></div>
+          <span class="neutraltitle">Debt State</span>
+          <p class="authorstyle author173613 big">
+            A normal condition we are living in. It is a state that has been constructed and reinforced in various forms that the indebtedness is neutral. The indebtedness is a stiff collar that confines and reshapes citizens' freedom in social relations.
+          </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Miranda Shou</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+
+        <div class="page leftpage hide hide-mobile" id="colonialism">
+          <span class="neutraltitle">Colonialism</span>
+          <p class="authorstyle author173613 big">
+            Colonialism is an aggressive predatory behavior in which colonized people are the victims of the extending practices of authority, selfishness, and cruelty of the colonizers. Colonialism also affects native people significantly as the colonizers occupy the land that does not belong to them as well as the negative impact of the ideology of imperialism to the descendants of indigenous people.
+          </p>
+          <p class="authorstyle author173613 description">
+            Defined by my father. A 47 year-old Chinese. He tries to understand the colonialism through a len of colonial lands in China and his own understanding of colony of the world history.
+          </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Miranda Shou</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="white-racial-frame">
+          <span class="neutraltitle">White Racial Frame</span>
+          <p class="authorstyle author162734 big">
+            The architecture of White supremacy that posits Whiteness as invisible, neutral, entirely abstracted into the mainframe. The blank white GUI, replete with a blinking cursor; the general culture of light. A transposition of culpability, to be replaced with weaponised fragility. 𝘐𝘵 𝘴𝘰𝘶𝘯𝘥𝘴 𝘭𝘪𝘬𝘦 𝘧𝘪𝘤𝘵𝘪𝘰𝘯, 𝘣𝘶𝘵 𝘪𝘵'𝘴 𝘮𝘰𝘳𝘦 𝘭𝘪𝘬𝘦 𝘴𝘤𝘪𝘦𝘯𝘤𝘦 𝘧𝘢𝘤𝘵.
+          </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by rahel aima</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="panoptic">
+          <span class="neutraltitle">Panopticon</span>
+          <img src="images/panopticon.png">
+          <p class="authorstyle author173505 description">
+            Thinking about how social platforms (databases) are a type of modern day panopticon, watching us and collecting information to be sold to surveillance and capitalist efforts.
+            <br><BR>
+          Those social platforms also control our view of the world, taking our information and feeding it back to us through a lens of algorithms and capitalist in our personal echo chamber.
+          <br><BR>
+          Dashed lines = data flow. Dotted lines = money.
+          </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by LeAnne Wagner</span>
+          </p>
+          <div class="num">496</div>
+        </div>
+
+
+        <div class="page leftpage hide hide-mobile" id="reckoning">
+          <span class="neutraltitle">Reckoning</span>
+          <p class="authorstyle author25047 small">
+            How's moving?
+            <BR><BR>
+            It's been hard, a lot of places won't even look at me because no job
+            <BR><BR>
+            5:02 PM
+            <BR><BR>
+            I was gonna move before this, but had to cancel.<BR>
+            Now I'm not sure if & when I'll have the chance to move, if I don’t manage to find a job.
+            <BR><BR>
+            6:24 PM
+            <BR><BR>
+            I feel like we're all up on the air right now, it's hard to find footing<BR>
+            I want to move back to Ohio and be closer to my fam, but I feel very stuck right now
+            <BR><BR>
+            I feel the same way<BR>
+            Destabilized, atomized, immobilized<BR>
+            Before this, some old co-workers assured me I had a place to <BR>
+            return to.<BR>
+            But now...<BR>
+            Friends are overworked, and always worried about losing their jobs.
+            <BR><BR>
+            7:49 PM
+            <BR><BR>
+            I guess it's like you said this immobilizing feeling.<BR>
+            I had such a clear idea of what I wanted to do, where I wanted to be at.<BR>
+            Now I feel...like so much has lost its point.<BR>
+            Full of questions, very little answers, and I'm wondering if the questions are even worth asking right now.
+            <BR><BR>
+            3:24 PM
+            <BR><BR>
+            What are some of those questions?
+            <BR><BR>
+            11:45 AM
+            <BR><BR>
+            Questions like... am I doing enough? How can my art help? Is it selfish to even think about a career right now?<BR>
+            Trying to find my place in this moment but I haven't been sure where to even start
+            <BR><BR>
+            11:00 PM
+            <BR><BR>
+            I've been grappling with these same feelings too. I feel helpless and powerless. I'm skeptical that my impulse to make art or do something self-directed in this moment is not the kind of work that needs to be done.<BR>
+            Lately I've been reevaluating all the goals and dreams I used to have.
+
+
+          </p>
+          <p class="authorstyle author25047 description">
+            An excerpt from an ongoing conversation between two recent additions to the unemployed class.
+            <BR><BR>
+            In collaboration with Cameron Granger and Tyler Yin
+            </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Tyler Yin</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="predatory-state">
+          <span class="neutraltitle">Predatory State</span>
+          <p class="authorstyle author159845 big">
+            a system or economy set up to suck and withhold resources from those without access to power and capital to those deemed worthy within it. It is then sustained through the continuation of manipulative capitalist practices to maintain the state.
+          </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Tash Nikol Smith</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="anti-blackness">
+          <span class="neutraltitle">ANTIBLACKNESS</span>
+          <img src="images/antiblackness.png">
+          <p class="authorstyle author102862 description">
+            The Google search results for "unprofessional hair," feature mostly black women and their hair that is not straight
+          </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Makayla Bailey</span>
+          </p>
+          <div class="num">496</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="communal-ethic">
+          <span class="neutraltitle">Communal Ethic</span>
+          <p class="authorstyle author159845 big">
+          set of values or principle beliefs that individuals share through experience, regional proximity, and/or culture — often developed as a response to oppression and having a shared moral value for a reciprocally driven world upholding respect for nature and humanity.
+          </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Tash Nikol Smith</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+        <div class="page rightpage hide hide-mobile" id="peoples-dictionary">
+          <span class="neutraltitle">People's Dictionary</span>
+          <p class="authorstyle author88210 small">
+            An infinitely capacious, colorful lexicon of voices giving meaning to the breadth of our collective, lived experiences.
+            <br><BR>
+            An assemblage of knowledge established within our mutual histories, liberated from predestined meaning, where there is no mandating of prescriptive language, nor any other tools of the elitist, and colonial literary industrial complex.
+            <br><BR>
+            Toni Morrison reminds us that “oppressive language does more than represent violence; it is violence; [it] does more than represent the limits of knowledge; it limits knowledge.”
+            <br><BR>
+            A People’s Dictionary is a subversive inquiry into the constraints of language and the other inherently oppressive structures which hinder our potential to imagine the Beyond. It asks questions like: “Which experiences inform theory? What is intellectual authority? Who gets to dictate what it means to be human?”
+            </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Zainab Aliyu</span>
+          </p>
+          <div class="num">434</div>
+        </div>
+
+
+        <div class="page leftpage hide hide-mobile" id="abundance">
+          <span class="neutraltitle">Abundance</span>
+          <p class="authorstyle author25047 big">
+            An excess of wealth and resources beyond the basic needs of an individual or company. Outside of natural ecosystems, abundance is often produced by practices of extraction, hoarding, and theft, and directly opposes sustainability and subsistence.
+          </p>
+          <p class="authorstyle author25047 description">
+            An excerpt from an ongoing conversation between two recent additions to the unemployed class.
+            <BR><BR>
+            In collaboration with Cameron Granger and Tyler Yin
+            </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Tyler Yin</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+        <div class="page leftpage hide hide-mobile" id="transparency">
+          <span class="neutraltitle">Transparency</span>
+          <p class="authorstyle author72134 big">
+            The ability to understand the material and immaterial processes which construct a thing, an idea, a system.
+            <BR><BR>
+            Sometimes, incomplete transparency is performed as complete transparency.<BR>
+            Performed transparency then obstructs understanding, misdirecting someone into an incomplete truth about the nature of that thing, idea or system.
+            </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by ilona altman</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
+
+        <div class="page leftpage hide hide-mobile" id="human">
+          <div class="block" style="background-image: url('images/sus-algorithm.png');"></div>
+          <span class="neutraltitle">Human</span>
+          <p class="authorstyle author173503 small">
+            Automating guilt<BR>
+            Automating race<BR>
+            Automating indebtedness<BR>
+            Automating the imagination and potential of a people<BR>
+            Their hopes and dreams<BR>
+            Their purpose for living
+            <BR><BR>
+            Automating their future with algorithms<BR>
+            Optimizing the fate of others who have little power in the system<BR>
+            Who have no choice but to deconstruct those algorithms
+            <BR><BR>
+            Like the algorithms they self-organize<BR>
+            They protest for a future that includes their hopes and dreams<BR>
+            That does not discriminate<BR>
+            That gives them a future where they have a voice<BR>
+            In making<BR>
+            Not in automating<BR>
+            The human in these algorithms
+            </p>
+          <p class="Ack">
+            <span class="neutral">— contributed by Krystal Maughan</span>
+          </p>
+          <div class="num">450</div>
+        </div>
+
 
 
 

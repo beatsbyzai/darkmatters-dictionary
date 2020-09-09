@@ -488,7 +488,7 @@ p {
   /* font-size: calc(1em * 0.75); */
 }
 
-img {
+.page img {
   margin-bottom: 0.25in !important;
 }
 p.description{
@@ -643,7 +643,6 @@ blockquote {
     left: -.65in;
 }
 
-
 .margin-top {
   margin-top: 1in;
   display: block;
@@ -745,6 +744,21 @@ body {
 }
 
 
+.block {
+  mix-blend-mode: multiply;
+  width: 32vw;
+  height: 92vh;
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  /* background-size: contain; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 .page {
   width: 32vw;
   height: 92vh;
@@ -756,6 +770,10 @@ body {
   padding-bottom: 2vw;
   border: 1px solid #555;
   cursor: move;
+}
+
+.page img {
+  filter: grayscale(100%);
 }
 
 .cover {
@@ -852,9 +870,16 @@ body {
 #introduction:hover,
 #contributors:hover,
 #acknowledgements:hover,
-.page:hover,
 .current-z {
-  z-index: 100000;
+  z-index: 10000000000 !important;
+}
+
+.page:hover {
+    z-index: 100000000000 !important;
+}
+
+.z {
+  z-index: 100000000;
 }
 
 .stack {
@@ -989,9 +1014,13 @@ span {
   transform: rotate(-4deg);
 }
 
+#buy-link {
+  transform: rotate(3deg);
+}
 
 
-#intro-link:hover, #contrib-link:hover, #ack-link:hover, #cite-link:hover, #read-link:hover, .preview a.big:hover  {
+
+#intro-link:hover, #contrib-link:hover, #ack-link:hover, #cite-link:hover, #read-link:hover, .preview a.big:hover, .buy a.big:hover  {
   transform: rotate(0deg);
 }
 
@@ -1002,6 +1031,17 @@ span {
 .preview {
   position: fixed;
   left: 2vw;
+  bottom: 45vh;
+  color: #fff;
+  text-align: left;
+  line-height: 1.5;
+  z-index: 100000000000000;
+  font-family: "Special Elite", cursive;
+}
+
+.buy {
+  position: fixed;
+  left: 2vw;
   bottom: 2vw;
   color: #fff;
   text-align: left;
@@ -1010,7 +1050,7 @@ span {
   font-family: "Special Elite", cursive;
 }
 
-.preview a {
+.preview a, .buy a {
   color: #006bb6;
   display: block;
   cursor: pointer;
@@ -1018,7 +1058,7 @@ span {
   /* text-decoration: underline; */
 }
 
-.preview a:hover {
+.preview a:hover, .buy a:hover {
   color: #fff
 }
 
@@ -1031,7 +1071,7 @@ span {
   margin-top: 2vh;
 }
 
-.preview a.big {
+.preview a.big, .buy a.big {
   font-size: 1.6vw;
   line-height: 1.3;
   display: block;
@@ -1062,9 +1102,7 @@ span {
   opacity: 100;
 }
 
-.z {
-  z-index: 100000000000000000;
-}
+
 
 .negative {
   margin-left: -.3vw;
@@ -1090,6 +1128,7 @@ span {
   height: .6vw;
   background: #000;
   animation: strikeblack .75s ease-in forwards;
+  display: inline:
 }
 
 
@@ -1119,24 +1158,230 @@ span {
 
 
 
+@media (min-width: 768px) {
 
-#dark-matter {
-  position: fixed;
-  top: 25vh;
-  right: 6vw;
-  transform: rotate(6deg);
+	.mobile-menu {display: none}
+
+
+  .hide-desktop  {
+    display: none;
+    opacity: 0;
+  }
+
 }
 
-#poetic-computation {
-  position: fixed;
-  top: 5vh;
-  right: 4vw;
-  transform: rotate(3deg);
-}
+@media only screen and (max-width: 768px) {
 
-#zoom {
-  position: fixed;
-  top: 15vh;
-  right: 10vw;
-  transform: rotate(-5deg);
+
+  body {
+    overflow: scroll;
+  }
+
+  .hide-mobile, span.hide-mobile {
+     /* display: none;
+     opacity: 0;
+     visibility: hidden; */
+     visibility: hidden;
+     opacity: 0;
+     z-index: -1;
+   }
+
+   .hide-desktop  {
+     display: inline-block;
+     opacity: 100;
+   }
+
+
+   .page {
+     width: 90vw;
+     height: 65vh;
+     background: #fff;
+     display: block;
+     overflow: scroll;
+     box-sizing: border-box;
+     padding-top: 4vw;
+     padding-bottom: 4vw;
+     border: 1px solid #555;
+     cursor: move;
+   }
+
+   .page img {
+     filter: grayscale(100%);
+   }
+
+   .cover {
+     /* width: 90%; */
+     width: 45vw;
+     height: auto;
+     background: #000;
+     display: block;
+     overflow: hidden;
+     box-sizing: border-box;
+     position: absolute;
+     /* left: 116.629vw; */
+     left: 61.05vw;
+     top: 35%;
+     background-image: none;
+   }
+
+
+   .spine {
+     /* width: 21.629%; */
+     width: 11.05vw;
+     height: auto;
+     background: #000;
+     display: block;
+     overflow: hidden;
+     box-sizing: border-box;
+     position: absolute;
+     /* left: 95vw; */
+     left: 50vw;
+     top: 35%;
+     background-image: none;
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+
+   .back {
+     /* width: 90%; */
+     width: 45vw;
+     height: auto;
+     background: #000;
+     display: block;
+     overflow: hidden;
+     box-sizing: border-box;
+     position: absolute;
+     left: 5vw;
+     top: 35%;
+     background-image: none;
+     /* opacity: .5; */
+   }
+
+   .navigation {
+     position: fixed;
+     left: 5vw;
+     top: 5vw;
+   }
+
+   .navigation a {
+     font-size: 2.5vh;
+   }
+
+   .preview {
+    position: fixed;
+    right: 5vw;
+    top: 5vw;
+    color: #fff;
+    font-size: 2.5vh;
+    width: 50vw;
+    left: 50vw;
+    }
+
+    .buy {
+     position: fixed;
+     left: 5vw;
+     bottom: 5vw;
+     color: #fff;
+     font-size: 2.5vh;
+     }
+
+    .preview a.big, .buy a.big {
+       font-size: 4vh;
+    }
+
+
+
+    #introduction {
+      position: fixed;
+      top: 35%;
+      left: 8vw;
+      transform: rotate(-1deg);
+    }
+
+
+    #contributors {
+      position: fixed;
+      top: 35%;
+      left: 8vw;
+      transform: rotate(3deg);
+    }
+
+
+    #acknowledgements {
+      position: fixed;
+      top: 35%;
+      left: 8vw;
+      transform: rotate(-4deg);
+    }
+
+
+
+    #how-to-cite {
+      position: fixed;
+      top: 35%;
+      left: 8vw;
+      transform: rotate(4deg);
+    }
+
+
+    #public-readings {
+      position: fixed;
+      top: 35%;
+      left: 8vw;
+      transform: rotate(-5deg);
+    }
+
+
+    .leftpage {
+      padding-left: 6vw;
+      padding-right: 4vw;
+    }
+
+
+    .rightpage {
+      padding-left: 4vw;
+      padding-right: 6vw;
+    }
+
+    .About {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+    }
+
+    .neutraltitle, .Ack {
+    font-size: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  .contributors {
+    font-size: 17pt;
+    line-height: 1.65;
+    display: block;
+    margin-right: 20px;
+    text-align: left;
+    }
+
+    sup.wordinline {
+    font-size: 3vw;
+    }
+
+    .Asterisk {
+    font-size: 4vw;
+    margin-top: 4vw;
+    line-height: 1.2;
+    margin-bottom: 4vw;
+    }
+
+    .negative {
+      margin-left: -1vw;
+    }
+
+    .active-link:after {
+      height: 2.5vw;
+    }
+    .strike:after {
+      height: 2.5vw;
+    }
+
+
 }
