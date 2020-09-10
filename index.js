@@ -15,6 +15,9 @@ $( document ).ready(function() {
       audio[i].src = "audio/page-flip-" + i + ".mp3";
   }
 
+  var marker = document.createElement("audio");
+  marker.src = "audio/marker.mp3";
+
   // Setters - dot notation and square bracket
   // audio.p1 = "Hello!";
   // audio['p2'] = "Hello 2!";
@@ -256,7 +259,10 @@ $( document ).ready(function() {
       $("#link-" + val).toggleClass("active-link");
       $("#" + val).removeClass("stack").removeClass("hidepages");
 
+      // if ($(window).width() > 769   {
       audio[randomNumberFromRange(1, 10)].play();
+      // }
+      marker.play();
     });
 
   });

@@ -874,9 +874,6 @@ body {
   z-index: 10000000000 !important;
 }
 
-.page:hover {
-    z-index: 100000000000 !important;
-}
 
 .z {
   z-index: 100000000;
@@ -1161,6 +1158,11 @@ span {
 @media (min-width: 768px) {
 
 	.mobile-menu {display: none}
+
+  .page:hover {
+      z-index: 100000000000 !important;
+  }
+
 
 
   .hide-desktop  {
