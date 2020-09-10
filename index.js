@@ -113,6 +113,7 @@ $( document ).ready(function() {
     $("#read-link").removeClass("strike");
 
     audio[1].play();
+    marker.play();
   });
 
   $("#contrib-link").click(function(){
@@ -131,6 +132,7 @@ $( document ).ready(function() {
     $("#read-link").removeClass("strike");
 
     audio[3].play();
+    marker.play();
   });
 
 
@@ -150,6 +152,7 @@ $( document ).ready(function() {
     $("#read-link").removeClass("strike");
 
     audio[4].play();
+    marker.play();
   });
 
   $("#cite-link").click(function(){
@@ -168,6 +171,7 @@ $( document ).ready(function() {
     $("#read-link").removeClass("strike");
 
     audio[5].play();
+    marker.play();
   });
 
   $("#read-link").click(function(){
@@ -186,6 +190,7 @@ $( document ).ready(function() {
     $("#read-link").addClass("strike");
 
     audio[6].play();
+    marker.play();
   });
 
 
