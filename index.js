@@ -8,9 +8,52 @@ $( document ).ready(function() {
     return this.replace(/([\uE000-\uF8FF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDDFF])/g, '');
   }
 
+  var audio = {};
+
+  for(var i = 0, len = 11; i < len; i++) {
+      audio[i] = document.createElement("audio");
+      audio[i].src = "audio/page-flip-" + i + ".mp3";
+  }
+
+  // Setters - dot notation and square bracket
+  // audio.p1 = "Hello!";
+  // audio['p2'] = "Hello 2!";
+  //
+  // // Getters - dot notation and square bracket
+  // alert(audio.p1); // alerts Hello!
+  // alert(audio['p2']); // alerts Hello 2!
+
+  // var p1 = document.createElement("audio");
+  // p1.src = "audio/page-flip-1.mp3";
+  // var p2 = document.createElement("audio");
+  // p2.src = "audio/page-flip-2.mp3";
+  // var p3 = document.createElement("audio");
+  // p3.src = "audio/page-flip-3.mp3";
+  // var p4 = document.createElement("audio");
+  // p4.src = "audio/page-flip-4.mp3";
+  // var p5 = document.createElement("audio");
+  // p5.src = "audio/page-flip-5.mp3";
+  // var p6 = document.createElement("audio");
+  // p6.src = "audio/page-flip-6.mp3";
+  // var p7 = document.createElement("audio");
+  // p7.src = "audio/page-flip-7.mp3";
+  // var p8 = document.createElement("audio");
+  // p8.src = "audio/page-flip-8.mp3";
+  // var p9 = document.createElement("audio");
+  // p9.src = "audio/page-flip-9.mp3";
+  // var p10 = document.createElement("audio");
+  // p10.src = "audio/page-flip-10.mp3";
+
+  // obj.volume = 0.1;
+  // obj.autoPlay = false;
+  // obj.preLoad = true;
+  // obj.controls = true;
+
+
 
   $("#link-stack").click(function(){
     $(".page").toggleClass("stack");
+    audio[7].play();
     // $(".link-unstack").removeClass("hide");
     // $(".link-stack").addClass("hide");
   });
@@ -23,10 +66,20 @@ $( document ).ready(function() {
 
   $("#link-hide").click(function(){
     $(".page").toggleClass("hidepages");
+    audio[9].play();
     // $(".back").toggleClass("z");
     // $(".spine").toggleClass("z");
     // $(".cover").toggleClass("z");
   });
+
+  $("#link-preview").click(function(){
+    audio[10].play();
+  });
+
+  $("#link-buy").click(function(){
+    audio[2].play();
+  });
+
 
   // if ($(window).width() < 769   {
   //   $("#intro-link").click(function(){
@@ -55,6 +108,8 @@ $( document ).ready(function() {
     $("#ack-link").removeClass("strike");
     $("#cite-link").removeClass("strike");
     $("#read-link").removeClass("strike");
+
+    audio[1].play();
   });
 
   $("#contrib-link").click(function(){
@@ -71,6 +126,8 @@ $( document ).ready(function() {
     $("#ack-link").removeClass("strike");
     $("#cite-link").removeClass("strike");
     $("#read-link").removeClass("strike");
+
+    audio[3].play();
   });
 
 
@@ -88,6 +145,8 @@ $( document ).ready(function() {
     $("#ack-link").addClass("strike");
     $("#cite-link").removeClass("strike");
     $("#read-link").removeClass("strike");
+
+    audio[4].play();
   });
 
   $("#cite-link").click(function(){
@@ -104,6 +163,8 @@ $( document ).ready(function() {
     $("#ack-link").removeClass("strike");
     $("#cite-link").addClass("strike");
     $("#read-link").removeClass("strike");
+
+    audio[5].play();
   });
 
   $("#read-link").click(function(){
@@ -120,6 +181,8 @@ $( document ).ready(function() {
     $("#ack-link").removeClass("strike");
     $("#cite-link").removeClass("strike");
     $("#read-link").addClass("strike");
+
+    audio[6].play();
   });
 
 
@@ -139,15 +202,7 @@ $( document ).ready(function() {
       return Math.floor(Math.random()*(max-min+1)+min);
   };
 
-
-
-    var numclicks = 0;
-    //  (function () {
-    //     $('#introduction').click(function () {
-    //     numclicks += 1;
-    //   });
-    // })();
-
+  var numclicks = 0;
 
 
 
@@ -155,6 +210,8 @@ $( document ).ready(function() {
   var pages = ["poetic-computation", "zoom", "dark-matter", "study", "surveillance", "racial-gaze", "sousveillance", "software", "ideology", "obfuscation",
   "black-gooey-universe", "interface", "racial-capitalism", "debt-state", "colonialism", "white-racial-frame", "panoptic", "reckoning", "predatory-state",
   "anti-blackness", "communal-ethic", "peoples-dictionary", "abundance", "transparency", "human"];
+
+
 
   jQuery.each( pages, function(i, val) {
 
@@ -167,6 +224,9 @@ $( document ).ready(function() {
     //   // come code
     //   $('.navigation').addClass('hide');
     // }
+
+
+
 
 
     var $body = $('body');
@@ -191,12 +251,12 @@ $( document ).ready(function() {
     $("#" + val).css({"z-index": "100" + numclicks, "position": "fixed", "top": randomNumberFromRange(minTop, maxTop) + "vw", "right": randomNumberFromRange(minRight, maxRight) + "vw", "transform":"rotate(" + randomNumberFromRange(minDeg, maxDeg) + "deg)"});
 
 
-
-
     $("#link-" + val).click(function(){
       $("#" + val).toggleClass("hide");
       $("#link-" + val).toggleClass("active-link");
       $("#" + val).removeClass("stack").removeClass("hidepages");
+
+      audio[randomNumberFromRange(1, 10)].play();
     });
 
   });

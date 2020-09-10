@@ -1193,7 +1193,7 @@ span {
 
 
    .page {
-     width: 90vw;
+     width: 80vw;
      height: 65vh;
      background: #fff;
      display: block;
@@ -1220,7 +1220,7 @@ span {
      position: absolute;
      /* left: 116.629vw; */
      left: 61.05vw;
-     top: 35%;
+     top: 30%;
      background-image: none;
    }
 
@@ -1236,7 +1236,7 @@ span {
      position: absolute;
      /* left: 95vw; */
      left: 50vw;
-     top: 35%;
+     top: 30%;
      background-image: none;
      background-size: cover;
      background-repeat: no-repeat;
@@ -1252,7 +1252,7 @@ span {
      box-sizing: border-box;
      position: absolute;
      left: 5vw;
-     top: 35%;
+     top: 30%;
      background-image: none;
      /* opacity: .5; */
    }
@@ -1265,6 +1265,7 @@ span {
 
    .navigation a {
      font-size: 2.5vh;
+     line-height: 1.5;
    }
 
    .preview {
@@ -1293,24 +1294,24 @@ span {
 
     #introduction {
       position: fixed;
-      top: 35%;
-      left: 8vw;
+      top: 30%;
+      left: 12vw;
       transform: rotate(-1deg);
     }
 
 
     #contributors {
       position: fixed;
-      top: 35%;
-      left: 8vw;
+      top: 30%;
+      left: 12vw;
       transform: rotate(3deg);
     }
 
 
     #acknowledgements {
       position: fixed;
-      top: 35%;
-      left: 8vw;
+      top: 30%;
+      left: 12vw;
       transform: rotate(-4deg);
     }
 
@@ -1318,16 +1319,16 @@ span {
 
     #how-to-cite {
       position: fixed;
-      top: 35%;
-      left: 8vw;
+      top: 30%;
+      left: 12vw;
       transform: rotate(4deg);
     }
 
 
     #public-readings {
       position: fixed;
-      top: 35%;
-      left: 8vw;
+      top: 30%;
+      left: 12vw;
       transform: rotate(-5deg);
     }
 
