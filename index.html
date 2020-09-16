@@ -37,7 +37,7 @@
         <a id="read-link">Public Readings</a>
         <a id="ack-link">Acknowledgements</a>
         <!-- <a id="cite-link">How to Cite</a> -->
-        <a id="buy-link" class="hide-desktop hide" src="" target="_blank">Buy — $30</a>
+        <a id="buy-link" class="hide-desktop hide">Buy — $30</a>
       </div>
 
       <div class="preview">
@@ -48,48 +48,354 @@
       </div>
 
       <div class="buy">
-        <span class="hide-mobile">565 pages <BR>
+        <span class="hide-mobile buy-dets">565 pages <BR>
           5.5x8.5" <BR>
             Softcover <br>
             ☺<Br> </span>
-              <span class="hide-desktop">565 pages ∗ 5.5x8.5" ∗  Softcover <br>
+              <span class="hide-desktop buy-dets">565 pages ∗ 5.5x8.5" ∗  Softcover <br>
                   </span>
-        <a id="link-buy" href="https://sfpcnyc.typeform.com/to/VxoUK1e9" class="big">Buy — $30</a>
+        <a id="link-buy" class="big">Buy — $30</a>
       </div>
 
       <div class="left">
       </div>
 
-      <!-- <div class="page"> -->
+      <!-- <div class="page page-z"> -->
 
-      <div class="cover">
-        <img src="images/cover.jpg" class="hide-desktop">
-      </div>
-      <div class="spine">
-        <img src="images/spine.jpg" class="hide-desktop">
-      </div>
-      <div class="back">
-        <img src="images/back.jpg" class="hide-desktop">
+      <div class="vector-preview">
+        <div class="cover">
+          <img src="images/cover.jpg" >
+        </div>
+        <div class="spine">
+          <img src="images/spine.jpg" >
+        </div>
+        <div class="back">
+          <img src="images/back.jpg" >
+        </div>
       </div>
 
-        <div class="page leftpage introduction-z hide" id="introduction">
+      <div class="buy-content hide">
+        <div class="big-image">
+          <img src="images/dictionary_prev.jpg">
+        </div>
+
+        <div class="buy-now">
+          "The Dictionary of Dark Matters"
+          <div class="buy-button" id='product-component-1600185585189'></div>
+
+          <BR><BR><RB>
+
+                  565 pages <BR>
+                  5.5x8.5" <BR>
+                  Softcover <BR>
+                  2020 <BR><BR>
+
+                  ORGANIZED BY American Arist and Zainab Aliyu <BR>
+                  DESIGNED BY Zainab Aliyu <i>(cover in collaboration with American Artist)</i><BR>
+                  EDITED BY Jessica Rajko
+
+                  <BR><BR>
+
+                  CONTRIBUTORS <i>(alphabetically)</i>: <BR>
+                  American Artist, angus fletcher, brontë velez, Cameron Granger,
+                  connor trotter, David Lisbon, Diana Marin, Heather Snyder Quinn, ilona altman,
+                  Jessica Rajko, Kevin He, Krystal Maughan, Lauren Gardner,
+                  Lauren Monzon, LeAnne Wagner, Lissa Aguilar, Lluvia Nisaye, Makayla Bailey,
+                  Makshya Tolbert, Matt Ross, Miranda Shou, Paras Sanghavi, rahel aima,
+                  Ryan Patterson, Sara K.R., Sus Labowitz, Tash Nikol Smith, Teresa Snider-Stein,
+                  Timur Fattahov, Trevor Tatham, Tristan Sauer, Tyler Yin, Zainab Aliyu
+
+                  <BR><BR>
+
+                  ILLUSTRATORS <i>(alphabetically)</i>: <BR>
+                  ilona altman, Sus Labowitz, Tash Nikol Smith, Tristan Sauer, Tyler Yin, Zainab Aliyu
+
+                  <BR><BR>
+
+                  Assembled with the support of Are.na and Callil Capuozzo
+
+
+        </div>
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'sfpc-nyc.myshopify.com',
+      storefrontAccessToken: '560b7d9768c854569b3175f1a0ad02db',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '5657020137623',
+        node: document.getElementById('product-component-1600185585189'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-weight": "bold",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#0060a4"
+        },
+        "background-color": "#006bb6",
+        ":focus": {
+          "background-color": "#0060a4"
+        }
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "buttonDestination": "checkout",
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Buy Now — $30"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-weight": "bold",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#0060a4"
+        },
+        "background-color": "#006bb6",
+        ":focus": {
+          "background-color": "#0060a4"
+        }
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-weight": "bold",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#0060a4"
+        },
+        "background-color": "#006bb6",
+        ":focus": {
+          "background-color": "#0060a4"
+        }
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-weight": "bold",
+        "background-color": "#006bb6",
+        ":hover": {
+          "background-color": "#0060a4"
+        },
+        ":focus": {
+          "background-color": "#0060a4"
+        }
+      },
+      "count": {
+        "font-size": "14px"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+
+
+
+<!--
+      <script type="text/javascript">
+      /*<![CDATA[*/
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        // var scriptURL = 'shopify.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+        function loadScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = scriptURL;
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+          script.onload = ShopifyBuyInit;
+        }
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: 'sfpc-nyc.myshopify.com',
+            storefrontAccessToken: '560b7d9768c854569b3175f1a0ad02db',
+          });
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('product', {
+              id: '5657020137623',
+              node: document.getElementById('product-component-1600185585189'),
+              moneyFormat: '%24%7B%7Bamount%7D%7D',
+              options: {
+        "product": {
+          "styles": {
+            "product": {
+              "@media (min-width: 601px)": {
+                // "max-width": "calc(25% - 20px)",
+                "max-width": "90vw",
+                "margin-left": "20px",
+                "margin-bottom": "50px"
+              }
+            }
+          },
+          "buttonDestination": "checkout",
+          "text": {
+            "button": "Buy Now"
+          }
+        },
+        "productSet": {
+          "styles": {
+            "products": {
+              "@media (min-width: 601px)": {
+                "margin-left": "-20px"
+              }
+            }
+          }
+        },
+        "modalProduct": {
+          "contents": {
+            "img": false,
+            "imgWithCarousel": false,
+            "button": false,
+            "buttonWithQuantity": true
+          },
+          "styles": {
+            "product": {
+              "@media (min-width: 601px)": {
+                "max-width": "100%",
+                "margin-left": "0px",
+                "margin-bottom": "0px"
+              }
+            }
+          },
+          "text": {
+            "button": "Add to Cart"
+          }
+        },
+        "cart": {
+          "text": {
+            "total": "Subtotal",
+            "button": "Checkout"
+          }
+        }
+      },
+            });
+          });
+        }
+      })();
+      /*]]>*/
+      </script> -->
+
+      </div>
+
+      <div class="dm-container">
+        <div class="page page-z leftpage introduction-z hide" id="introduction">
           <p class="About">
             <span class="neutraltitle">Introduction</span>
             <span class="author88210">This is the Dictionary of <u id="link-dark-matter">Dark Matters</u>.</span>
-            <sup class="wordinline">186</sup>
+            <!-- <sup class="wordinline">186</sup> -->
             <span class="author88210"> During the Summer of 2020, Dark Matters was taught by </span>
             <span class="author134492">American Artist and Zainab Aliyu (TA) </span>
             <span class="author88210">at the School for <u id="link-poetic-computation">Poetic Computation</u>. </span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author88210">For ten weeks, we stewarded</span>
             <span class="author134492"> and taught </span>
             <span class="author88210">this class over </span>
             <span class="author134492">the video platform <u id="link-zoom">Zoom</u>.</span>
-            <sup class="wordinline">559 </sup>
+            <!-- <sup class="wordinline">559 </sup> -->
             <span class="author88210"> Thirty students </span>
             <span class="author134492">convened over and through national borders </span>
             <span class="author88210">to <u id="link-study">study</u></span>
-            <sup class="wordinline">482</sup>
+            <!-- <sup class="wordinline">482</sup> -->
             <span class="author88210"> alongside us and with one another. We engaged in intimate practices of unlearning, deep listening and reflection. Most importantly, we studied “under the university,” a framing we borrow from cultural theorist</span>
             <span class="author134492 negative">s </span>
             <span class="author88210">Fred Moten </span>
@@ -98,57 +404,57 @@
 
           <p class="About">
             <span class="author134492">The class, titled Dark Matters: <i>On Blackness, <u id="link-surveillance">Surveillance</u></i>,</span>
-            <sup class="wordinline">487 </sup>
+            <!-- <sup class="wordinline">487 </sup> -->
             <span class="author134492"> <i>and the Whiteness of the Screen</i>, takes it's namesake from Simone Browne's book <i>Dark Matters: On the Surveillance of Blackness</i>. </span>
             <span class="author88210">This critical text winds </span>
             <span class="author134492">personal, political and pop-cultural narratives of <u id="link-racial-gaze">racial gaze</u></span>
-            <sup class="wordinline">442 </sup>
+            <!-- <sup class="wordinline">442 </sup> -->
             <span class="author134492"> and <u id="link-sousveillance">sousveillance</u></span>
-            <sup class="wordinline">476 </sup>
+            <!-- <sup class="wordinline">476 </sup> -->
             <span class="author134492"> to address the origins of so many recurring dynamics of power that operate through high technology. The readings in our class began with Wendy Chun's critique of </span>
             <span class="author88210"><u id="link-software">software</u></span>
-            <sup class="wordinline">473 </sup>
+            <!-- <sup class="wordinline">473 </sup> -->
             <span class="author88210">and </span>
             <span class="author134492"><u id="link-ideology">ideology</u>'s</span>
-            <sup class="wordinline">313 </sup>
+            <!-- <sup class="wordinline">313 </sup> -->
             <span class="author134492">tendencies towards </span>
             <span class="author134492"><u id="link-obfuscation">obfuscation</u>,</span>
-            <sup class="wordinline">386 </sup>
+            <!-- <sup class="wordinline">386 </sup> -->
             <span class="author88210">as well as </span>
           <!-- </p>
 
           <p class="About"> -->
             <span class="author134492">American Artist's <u id="link-black-gooey-universe">Black Gooey Universe</u></span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author88210">and imagining of an unsovereign technology. </span>
             <span class="author134492">Over the four </span>
             <span class="author88210">sessions </span>
             <span class="author134492">that this class has been taught, we have introduced authors to the curriculum such as Jackie Wang, David N. Pellow, Lisa Sun-Hee Park and Ruha Benjamin. </span>
             <span class="author88210">Selected work by these authors hold </span>
             <span class="author134492">the origins of the <u id="link-interface">interface</u></span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author134492">to account for the continuation of <u id="link-racial-capitalism">racial capitalism</u>,</span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author134492">the <u id="link-debt-state">debt state</u>,</span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author134492"><u id="link-colonialism">colonialism</u>,</span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author134492">the <u id="link-white-racial-frame">white racial frame</u>,</span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author134492">and other </span>
             <span class="author88210">global practices that are deeply rooted in American colonial history.</span>
           </p>
 
           <p class="About">
             <span class="author88210">Dark Matters reminds us about the </span>
-            <span class="author134492"><u id="link-panoptic">panoptic</u></span>
-            <sup class="wordinline">100 </sup>
-            <span class="author88210">models and codes that construct the world we live in, their underlying ideologies, as well as the need for our consistent </span>
+            <span class="author88210"><u id="link-panoptic">panoptic</u></span>
+            <!-- <sup class="wordinline">100 </sup> -->
+            <span class="author88210">models and codes that construct the world we live in, their embedded value systems, as well as the need for our ongoing </span>
             <span class="author134492"><u id="link-reckoning">reckoning</u>.</span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author88210">This class has given us intentional time to tend to ourselves as we contend with this </span>
             <span class="author134492"><u id="link-predatory-state">predatory state,</u></span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author88210">to study the material while existing within the systems we are learning to name. Together, we studied theory, but theory is nothing without the lived experiences that inform it. </span>
             <span class="author134492">The duration of our time together coincided </span>
             <span class="author88210">with </span>
@@ -169,11 +475,11 @@
             <span class="author134492">various </span>
             <span class="author88210">academic institutions and places of work </span>
             <span class="author134492">(including our own) for their perpetuation of <u id="link-anti-blackness">anti-blackness</u>.</span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author134492">These issues framed all of our </span>
             <span class="author88210">conversations and largely </span>
             <span class="author134492">informed our <u id="link-communal-ethic">communal ethic</u></span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author134492">of </span>
             <span class="author88210">shar</span>
             <span class="author134492 negative">ing, </span>
@@ -193,23 +499,23 @@
             <span class="author88210">self-published </span>
             <span class="author134492">book you are reading is the culmination of all of that thought. It is a 500+ page (and growing) collaborative </span>
             <span class="author88210"><u id="link-peoples-dictionary">people's dictionary</u></span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author88210">written over the course of ten weeks. </span>
             <span class="author134492">It is an <u id="link-abundance">abundance</u></span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author134492">of poetry, prose, creative writing, personal history and illustration </span>
             <span class="author88210">filled with terms we have come across during our time together. </span>
             <span class="author134492">For <u id="link-transparency">transparency</u>,</span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author88210">every voice within the dictionary is uniquely represented with the contributor's preference in typography. By </span>
             <span class="author88210">archiving our histories and inserting our </span>
             <span class="author134492"><u id="link-human">human</u></span>
-            <sup class="wordinline">100 </sup>
+            <!-- <sup class="wordinline">100 </sup> -->
             <span class="author88210">experiences into the critical theories we are </span>
           <!-- </p>
 
           <p class="About"> -->
-            <span class="author88210">learning, we are looking inwardly and actively engaging with the way we move through the world. It feels increasingly necessary, helping us to ask not only about the technologies, processes and policies that govern civil liberties, but also about whose bodies and freedoms </span>
+            <span class="author88210">learning, we are looking inwardly and actively engaging with the way we move through the world. It feels progressively vital, helping us to not just interrogate the technologies, systems and policies that regulate civil rights, but also inquire about whose bodies </span>
             <span class="author134492">remain captive.</span>
           </p>
 
@@ -269,7 +575,7 @@
             <span class="neutral">Thank you to the <a href="http://sfpc.io/">School for Poetic Computation</a> for holding space for us and Lauren Gardner for her immense support. A special thanks to Ingrid Burrington, Simone Browne, Zach Blas, Rashida Richardson, Stephanie Dinkins and Tsige Tafesse for joining our students in conversation throughout the session.</span>
           </p>
           <p class="Ack">
-            <span class="neutral">This book was designed by <a href="https://zai.zone">Zainab Aliyu</a> (cover designed in collaboration with <a href="https://americanartist.us/">American Artist</a>), edited by Jessica Rajko, and assembled with the support of <a href="https://www.are.na/">Are.na</a> and Callil Capuozzo.</span>
+            <span class="neutral">This book was designed by <a href="https://zai.zone">Zainab Aliyu</a> (cover designed in collaboration with <a href="https://americanartist.us/">American Artist</a>), edited by <a href="http://www.jessicarajko.com/">Jessica Rajko</a>, and assembled with the support of <a href="https://www.are.na/">Are.na</a> and <a href="https://www.are.na/callil-capuozzo">Callil Capuozzo</a>.</span>
           </p>
           <p class="Ack">
             <span class="neutral">Our digital website can be visited at <a href="http://darkmatters.xyz/">https://darkmatters.xyz</a> and was designed and developed by <a href="https://zai.zone">Zainab Aliyu</a>.</span>
@@ -297,7 +603,7 @@
 
 
 
-        <div class="page rightpage hide hide-mobile" id="dark-matter">
+        <div class="page page-z rightpage hide hide-mobile" id="dark-matter">
           <span class="neutraltitle">Dark Matter</span>
 
 
@@ -316,7 +622,7 @@
         </div>
 
 
-        <div class="page rightpage hide hide-mobile" id="poetic-computation">
+        <div class="page page-z rightpage hide hide-mobile" id="poetic-computation">
           <span class="neutraltitle">Poetic Computation</span>
           <p class="authorstyle author88210 big">
             An act of resistance against the utilitarian notions of “efficiency” and "progress" that often replicate structures of domination and capitalist agendas.
@@ -327,7 +633,7 @@
           <div class="num">434</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="zoom">
+        <div class="page page-z leftpage hide hide-mobile" id="zoom">
           <span class="neutraltitle">Zoom</span>
           <p class="authorstyle author134492 small">
             Zoom is a video-conferencing platform that became extremely popular in the United States during the COVID-19 pandemic. Within weeks many professional institutions and universities mandated the use of Zoom by employees rather than other more familiar video-conferencing platforms. Though applications such as Skype and FaceTime have built their names to be synonymous with the act of video-calling, Zoom immediately overcame their familiarity through mere ubiquity. Zoom’s popularity has raised privacy concerns for many critics of networked technology, and though the FBI issued a warning about Zoom’s teleconferences being hijacked to display violent imagery and hate speech, it is still considered a popular platform for mass video-conferencing in the United States as of August 2020.
@@ -338,7 +644,7 @@
           <div class="num">563</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="study">
+        <div class="page page-z leftpage hide hide-mobile" id="study">
           <span class="neutraltitle">Study</span>
           <p class="authorstyle author134492 small">
             “When you think about what study is, the way that we understand it as a practice, we’re talking about getting together with others, and determining what needs to be learned together, and spending time with that material, spending time with each other, without any objective, without any end point, without any sense that we will ever escape our feeling that we are permanently immature, premature, without credit, and in a kind of mutual bad debt to each other, which we don’t intend to repay.”
@@ -352,7 +658,7 @@
           <div class="num">495</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="surveillance">
+        <div class="page page-z leftpage hide hide-mobile" id="surveillance">
           <span class="neutraltitle">Surveillance</span>
           <img src="images/surveillance.png">
           <p class="Ack">
@@ -361,7 +667,7 @@
           <div class="num">496</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="racial-gaze">
+        <div class="page page-z leftpage hide hide-mobile" id="racial-gaze">
           <span class="neutraltitle">Racial Gaze</span>
           <p class="authorstyle author72134 big">
             the scrutinizing of blackness,<Br>
@@ -377,7 +683,7 @@
           <div class="num">450</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="sousveillance">
+        <div class="page page-z leftpage hide hide-mobile" id="sousveillance">
           <span class="neutraltitle">Sousveillance</span>
           <img src="images/sousveillance.png">
           <p class="authorstyle author173737 description">
@@ -393,7 +699,7 @@
         </div>
 
 
-        <div class="page leftpage hide hide-mobile" id="software">
+        <div class="page page-z leftpage hide hide-mobile" id="software">
           <span class="neutraltitle">Software</span>
           <p class="authorstyle author173508 big">
           Noun
@@ -407,7 +713,7 @@
 
 
 
-        <div class="page leftpage hide hide-mobile" id="ideology">
+        <div class="page page-z leftpage hide hide-mobile" id="ideology">
           <span class="neutraltitle">Ideology</span>
           <p class="authorstyle author173503 big">
             A projection of ideas that may or may not be agreed upon but rather accepted by a dominant group / oligarchy (to be consumed)
@@ -418,7 +724,7 @@
           <div class="num">450</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="obfuscation">
+        <div class="page page-z leftpage hide hide-mobile" id="obfuscation">
           <span class="neutraltitle">Obfuscation</span>
           <p class="authorstyle author173511 big">
             at least one dream a week where someone is coming for me but can’t find me,<BR>
@@ -436,7 +742,7 @@
         </div>
 
 
-        <div class="page leftpage hide hide-mobile" id="black-gooey-universe">
+        <div class="page page-z leftpage hide hide-mobile" id="black-gooey-universe">
           <span class="neutraltitle">Black Gooey Universe</span>
           <img src="images/blackgooey.jpg">
           <p class="authorstyle author173494 description">
@@ -449,7 +755,7 @@
         </div>
 
 
-        <div class="page leftpage hide hide-mobile" id="interface">
+        <div class="page page-z leftpage hide hide-mobile" id="interface">
           <div class="block" style="background-image: url('images/tyler-interface-surveil.png');"></div>
           <span class="neutraltitle">Interface</span>
           <p class="authorstyle author173504 big">
@@ -460,7 +766,7 @@
           <div class="num">450</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="racial-capitalism">
+        <div class="page page-z leftpage hide hide-mobile" id="racial-capitalism">
           <span class="neutraltitle">Racial Capitalism</span>
           <p class="authorstyle author102862 big">
             a system of apportioning exploitability, humanity, and extractability along racial lines in order to subsidize whiteness as quality of life, as access to rights
@@ -471,7 +777,7 @@
           <div class="num">450</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="debt-state">
+        <div class="page page-z leftpage hide hide-mobile" id="debt-state">
           <div class="block" style="background-image: url('images/sus-debt.png');"></div>
           <span class="neutraltitle">Debt State</span>
           <p class="authorstyle author173613 big">
@@ -484,7 +790,7 @@
         </div>
 
 
-        <div class="page leftpage hide hide-mobile" id="colonialism">
+        <div class="page page-z leftpage hide hide-mobile" id="colonialism">
           <span class="neutraltitle">Colonialism</span>
           <p class="authorstyle author173613 big">
             Colonialism is an aggressive predatory behavior in which colonized people are the victims of the extending practices of authority, selfishness, and cruelty of the colonizers. Colonialism also affects native people significantly as the colonizers occupy the land that does not belong to them as well as the negative impact of the ideology of imperialism to the descendants of indigenous people.
@@ -498,7 +804,7 @@
           <div class="num">450</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="white-racial-frame">
+        <div class="page page-z leftpage hide hide-mobile" id="white-racial-frame">
           <span class="neutraltitle">White Racial Frame</span>
           <p class="authorstyle author162734 big">
             The architecture of White supremacy that posits Whiteness as invisible, neutral, entirely abstracted into the mainframe. The blank white GUI, replete with a blinking cursor; the general culture of light. A transposition of culpability, to be replaced with weaponised fragility. 𝘐𝘵 𝘴𝘰𝘶𝘯𝘥𝘴 𝘭𝘪𝘬𝘦 𝘧𝘪𝘤𝘵𝘪𝘰𝘯, 𝘣𝘶𝘵 𝘪𝘵'𝘴 𝘮𝘰𝘳𝘦 𝘭𝘪𝘬𝘦 𝘴𝘤𝘪𝘦𝘯𝘤𝘦 𝘧𝘢𝘤𝘵.
@@ -509,7 +815,7 @@
           <div class="num">450</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="panoptic">
+        <div class="page page-z leftpage hide hide-mobile" id="panoptic">
           <span class="neutraltitle">Panopticon</span>
           <img src="images/panopticon.png">
           <p class="authorstyle author173505 description">
@@ -526,7 +832,7 @@
         </div>
 
 
-        <div class="page leftpage hide hide-mobile" id="reckoning">
+        <div class="page page-z leftpage hide hide-mobile" id="reckoning">
           <span class="neutraltitle">Reckoning</span>
           <p class="authorstyle author25047 small">
             How's moving?
@@ -584,7 +890,7 @@
           <div class="num">450</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="predatory-state">
+        <div class="page page-z leftpage hide hide-mobile" id="predatory-state">
           <span class="neutraltitle">Predatory State</span>
           <p class="authorstyle author159845 big">
             a system or economy set up to suck and withhold resources from those without access to power and capital to those deemed worthy within it. It is then sustained through the continuation of manipulative capitalist practices to maintain the state.
@@ -595,7 +901,7 @@
           <div class="num">450</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="anti-blackness">
+        <div class="page page-z leftpage hide hide-mobile" id="anti-blackness">
           <span class="neutraltitle">ANTIBLACKNESS</span>
           <img src="images/antiblackness.png">
           <p class="authorstyle author102862 description">
@@ -607,7 +913,7 @@
           <div class="num">496</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="communal-ethic">
+        <div class="page page-z leftpage hide hide-mobile" id="communal-ethic">
           <span class="neutraltitle">Communal Ethic</span>
           <p class="authorstyle author159845 big">
           set of values or principle beliefs that individuals share through experience, regional proximity, and/or culture — often developed as a response to oppression and having a shared moral value for a reciprocally driven world upholding respect for nature and humanity.
@@ -618,7 +924,7 @@
           <div class="num">450</div>
         </div>
 
-        <div class="page rightpage hide hide-mobile" id="peoples-dictionary">
+        <div class="page page-z rightpage hide hide-mobile" id="peoples-dictionary">
           <span class="neutraltitle">People's Dictionary</span>
           <p class="authorstyle author88210 small">
             An infinitely capacious, colorful lexicon of voices giving meaning to the breadth of our collective, lived experiences.
@@ -636,7 +942,7 @@
         </div>
 
 
-        <div class="page leftpage hide hide-mobile" id="abundance">
+        <div class="page page-z leftpage hide hide-mobile" id="abundance">
           <span class="neutraltitle">Abundance</span>
           <p class="authorstyle author25047 big">
             An excess of wealth and resources beyond the basic needs of an individual or company. Outside of natural ecosystems, abundance is often produced by practices of extraction, hoarding, and theft, and directly opposes sustainability and subsistence.
@@ -652,7 +958,7 @@
           <div class="num">450</div>
         </div>
 
-        <div class="page leftpage hide hide-mobile" id="transparency">
+        <div class="page page-z leftpage hide hide-mobile" id="transparency">
           <span class="neutraltitle">Transparency</span>
           <p class="authorstyle author72134 big">
             The ability to understand the material and immaterial processes which construct a thing, an idea, a system.
@@ -667,7 +973,7 @@
         </div>
 
 
-        <div class="page leftpage hide hide-mobile" id="human">
+        <div class="page page-z leftpage hide hide-mobile" id="human">
           <div class="block" style="background-image: url('images/sus-algorithm.png');"></div>
           <span class="neutraltitle">Human</span>
           <p class="authorstyle author173503 small">
@@ -696,6 +1002,7 @@
           <div class="num">450</div>
         </div>
 
+      </div>
 
 
 
