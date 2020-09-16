@@ -299,12 +299,6 @@ $( document ).ready(function() {
   var numclicks = 0;
 
 
-  function myFunction($elem) {
-     var lastID;
-     lastID = $elem.attr('id');
-     $.data('lastID', lastID);
-     lastID.addClass(".current-z");
-  }
 
 
   var pages = ["poetic-computation", "zoom", "dark-matter", "study", "surveillance", "racial-gaze", "sousveillance", "software", "ideology", "obfuscation",
@@ -355,7 +349,7 @@ $( document ).ready(function() {
       $("#" + val).toggleClass("hide").toggleClass("page-z");
       $("#link-" + val).toggleClass("active-link");
       $("#" + val).removeClass("stack").removeClass("hidepages");
-      myFunction($(this));
+
 
       // if ($(window).width() > 769   {
       audio[randomNumberFromRange(1, 10)].play();
