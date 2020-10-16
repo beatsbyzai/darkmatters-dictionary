@@ -119,6 +119,7 @@ $( document ).ready(function() {
     $(".dm-container").removeClass("hide");
 
     $(".buy-dets").removeClass("hide");
+    // $("#link-buy").removeClass("hide");
 
     audio[1].play();
     marker.play();
@@ -260,7 +261,7 @@ $( document ).ready(function() {
     $("#cite-link").removeClass("strike");
     $("#read-link").removeClass("strike");
     $(".buy-dets").addClass("hide");
-    $("#link-buy").toggleClass("hide");
+    $("#link-buy").toggleClass("hide-mobile");
     $("#buy-link").toggleClass("hide");
     $("#buy-link").toggleClass("strike");
   });
