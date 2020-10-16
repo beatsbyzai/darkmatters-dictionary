@@ -260,6 +260,9 @@ $( document ).ready(function() {
     $("#cite-link").removeClass("strike");
     $("#read-link").removeClass("strike");
     $(".buy-dets").addClass("hide");
+    $("#link-buy").toggleClass("hide");
+    $("#buy-link").toggleClass("hide");
+    $("#buy-link").toggleClass("strike");
   });
 
   $("#buy-link").click(function(){
