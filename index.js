@@ -249,18 +249,18 @@ $( document ).ready(function() {
 
   $("#link-buy").click(function(){
     marker.play();
-    $(".buy-content").toggleClass("hide");
+    // $(".buy-content").toggleClass("hide");
     $("#link-buy").toggleClass("strike");
-    $(".vector-preview").toggleClass("hide");
-    $(".dm-container").toggleClass("hide");
-    $("#link-hide").addClass("hide");
-    $("#link-stack").addClass("hide");
-    $("#intro-link").removeClass("strike");
-    $("#contrib-link").removeClass("strike");
-    $("#ack-link").removeClass("strike");
-    $("#cite-link").removeClass("strike");
-    $("#read-link").removeClass("strike");
-    $(".buy-dets").addClass("hide");
+    // $(".vector-preview").toggleClass("hide");
+    // $(".dm-container").toggleClass("hide");
+    // $("#link-hide").addClass("hide");
+    // $("#link-stack").addClass("hide");
+    // $("#intro-link").removeClass("strike");
+    // $("#contrib-link").removeClass("strike");
+    // $("#ack-link").removeClass("strike");
+    // $("#cite-link").removeClass("strike");
+    // $("#read-link").removeClass("strike");
+    // $(".buy-dets").addClass("hide");
     $("#link-buy").toggleClass("hide-mobile");
     $("#buy-link").toggleClass("hide");
     $("#buy-link").toggleClass("strike");
