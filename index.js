@@ -268,7 +268,7 @@ $( document ).ready(function() {
 
   $("#buy-link").click(function(){
     marker.play();
-    $(".buy-content").toggleClass("hide");
+    // $(".buy-content").toggleClass("hide");
     $("#buy-link").toggleClass("strike");
     $(".vector-preview").toggleClass("hide");
     $(".dm-container").toggleClass("hide");
